@@ -16,11 +16,103 @@
     unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
   }
 
+/* Universal Styles */
+
 * {
-    box-sizing: border-box;
     margin: 0;
+    border: 0;
     padding: 0;
 }
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #505050;
+}
+
+main, footer {
+    position: relative;
+}
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
+
+.image-container {
+    overflow: hidden;
+    box-shadow: 5px 5px 20px darkslategrey;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.button {
+    padding: 1rem 0;
+    background-color: #505050;
+    color: white;
+    text-align: center;
+    font-size: 1.25rem; /* 20px */
+    width: 80%;
+    box-shadow: 5px 5px 20px darkslategrey;
+    transition: all 0.5s ease-in 0.1s;
+}
+
+.button:hover {
+    background-color: darkslategray;
+    padding: 1.25rem 0.5rem; /* 20px 8px */
+    box-shadow: 5px 5px 20px black
+}
+
+.side-container {
+    display: flex;
+    align-items: center;
+    transition: background-color 0.5s ease-in 0.1s;
+}
+
+.side-container:hover {
+    background-color: lightgray;
+}
+
+h1 {
+    font-size: 3.125rem; /* 50px */
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+
+h2 {
+    font-size: 2.625rem; /* 42px */
+    font-weight: 800;
+}
+
+h3 {
+    font-size: 1.75rem; /* 28px */
+}
+
+p {
+    font-family: 'Poppins', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: #505050;
+}
+
+a:hover {
+    color: rgb(122, 172, 189);
+    font-size: 110%;
+}
+
+/* HEADER SECTION */
 
 header {
     height: 64px;
@@ -73,4 +165,38 @@ header ul {
     padding-right: 16px;
     font-weight: 600;
     opacity: 0.65;
+}
+
+/* MAIN SECTION */
+
+main {
+    position: relative;
+  }
+
+  /* BANNER SECTION */
+
+#banner {
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+}
+
+#banner-image {
+    width: 60%;
+    margin: 2rem; /* 32px */
+    overflow: hidden;
+}
+
+#banner .content {
+    width: 30%;
+    padding: 4rem 1.5rem; /* 64px 24px */
+}
+
+#banner h3 {
+    line-height: 1.5;
+    margin-bottom: 2.5rem; /* 40px */
+}
+
+#banner a {
+    color: white;
 }
